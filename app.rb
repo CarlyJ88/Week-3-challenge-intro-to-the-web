@@ -6,14 +6,7 @@ get '/' do
 end
 
 get '/cat' do
-  "<div>
-    <img src='http://bit.ly/1eze8aE'>
-   </div>"
+  erb(:index)
 end
 
-set :session_secret, 'super secret'
-get '/secret' do
-
-  'This is a secret page for you again HEEEELLLLLOOOO!'
-
-end
+# set :session_secret, 'super secret'
